@@ -16,7 +16,7 @@ app.config['port'] = 5000
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['ALLOWED_EXTENSIONS'] = {'xlsx'}
 
-report_data = report("0", "0", "Colombia")
+report_data = report()
 report_data.set_data()
 
 
@@ -41,8 +41,8 @@ def upload_file():
         return redirect(url_for('dashboard'))
 
 
-# Segunda gráfica - Estado
+# Tiempos promedio
 @app.route("/data2", methods=['GET'])
 def data2():
     # sleep(1)
-    return report_data.state_of_package().to_json()
+    return report_data.average_times().to_json()
