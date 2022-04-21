@@ -17,7 +17,7 @@
                 labels: keys,
                 datasets: [{
                     axis: 'x',
-                    label: 'Número de paquetes',
+                    label: 'Tiempo promedio',
                     data: values,
                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     borderColor: 'rgba(54, 162, 235, 1)',
@@ -31,7 +31,7 @@
                     }
                 },
                 responsive: true,
-                indexAxis: 'x',
+                indexAxis: 'y',
                 plugins: {
                     legend: {
                         position: 'right',
