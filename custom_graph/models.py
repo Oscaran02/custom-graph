@@ -1,4 +1,3 @@
-from datetime import datetime
 from time import sleep
 
 import pandas
@@ -12,7 +11,7 @@ class report:
 
     # Method to get the data from Excel file and return a dataframe
     def get_data_from_excel(self):
-        self.df = pandas.read_excel("uploads/data.xlsx",
+        self.df = pandas.read_excel("custom_graph/uploads/data.xlsx",
                                     header=0,
                                     decimal=",",
                                     engine="openpyxl",

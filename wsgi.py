@@ -1,4 +1,3 @@
-from app import app
+from custom_graph import init_app
 
-if __name__ == "__main__":
-    app.run()
+app = init_app()

@@ -12,7 +12,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../custom-graph\templates" />
+        <option value="$MODULE_DIR$/custom_graph/templates" />
       </list>
     </option>
   </component>
