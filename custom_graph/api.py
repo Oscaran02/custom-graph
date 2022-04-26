@@ -31,7 +31,7 @@ def upload_file():
         f.close()
         report_data.set_data()
         # sleep(5)
-        return redirect(url_for('dashboard'))
+        return redirect(url_for('api.dashboard'))
 
 
 # Tiempos promedio
